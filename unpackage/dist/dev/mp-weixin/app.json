@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/index",
+    "pages/product/index",
+    "pages/coupon/index",
+    "pages/setting/index",
+    "pages/login/signup"
+  ],
+  "usingComponents": {
+    "tabs": "/components/tabs",
+    "nav-bar": "/components/navbar"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#C0E3FF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#646566",
+    "selectedColor": "#1989fa",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./static/tabIcon/tab_01.png",
+        "selectedIconPath": "./static/tabIcon/tab_01_on.png"
+      },
+      {
+        "pagePath": "pages/product/index",
+        "text": "商品",
+        "iconPath": "./static/tabIcon/tab_03.png",
+        "selectedIconPath": "./static/tabIcon/tab_03_on.png"
+      },
+      {
+        "pagePath": "pages/coupon/index",
+        "text": "优惠券",
+        "iconPath": "./static/tabIcon/tab_02.png",
+        "selectedIconPath": "./static/tabIcon/tab_02_on.png"
+      },
+      {
+        "pagePath": "pages/setting/index",
+        "text": "设置",
+        "iconPath": "./static/tabIcon/tab_04.png",
+        "selectedIconPath": "./static/tabIcon/tab_04_on.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredBackgroundModes": [
+    "location"
+  ],
+  "requiredPrivateInfos": [
+    "getLocation",
+    "onLocationChange",
+    "startLocationUpdate",
+    "startLocationUpdateBackground"
+  ]
+}

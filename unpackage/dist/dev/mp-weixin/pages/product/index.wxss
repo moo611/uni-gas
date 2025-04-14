@@ -1,0 +1,34 @@
+
+.toper.data-v-a911e391 {
+		/* height: 90rpx; */
+		width: 100%;
+}
+.scroll-view.data-v-a911e391 {
+		width: 100%;
+		/* height: 100%; */
+		flex: 1;
+		overflow: hidden;
+		
+		box-sizing: border-box;
+}
+.card.data-v-a911e391 {
+		/* margin: 10rpx; */
+		box-sizing: border-box;
+		padding:20rpx;
+		width: 100%;
+		height: 200rpx;
+		background-color: white;
+		display: flex;
+}
+.btn.data-v-a911e391 {
+		position: absolute;
+		right: 20rpx;
+		top: 20rpx;
+}
+.main.data-v-a911e391 {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+}
+
+	

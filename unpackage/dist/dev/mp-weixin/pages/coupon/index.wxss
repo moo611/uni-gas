@@ -1,0 +1,35 @@
+
+.toper.data-v-59672890 {
+		/* height: 90rpx; */
+		width: 100%;
+}
+.scroll-view.data-v-59672890 {
+		width: 100%;
+		/* height: 100%; */
+		flex: 1;
+		overflow: hidden;
+
+		box-sizing: border-box;
+}
+.card.data-v-59672890 {
+		/* margin: 10rpx; */
+		box-sizing: border-box;
+		padding: 20rpx;
+		width: 100%;
+		height: 200rpx;
+		background-color: white;
+		position: relative;
+}
+.btn.data-v-59672890 {
+		position: absolute;
+		right: 20rpx;
+		top: 20rpx;
+}
+.main.data-v-59672890 {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+}
+
+
+	
