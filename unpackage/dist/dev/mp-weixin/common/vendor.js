@@ -7626,6 +7626,7 @@ exports.createSSRApp = createSSRApp;
 exports.e = e;
 exports.f = f;
 exports.index = index;
+exports.isRef = isRef;
 exports.o = o;
 exports.onLoad = onLoad;
 exports.p = p;

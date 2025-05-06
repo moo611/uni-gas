@@ -12,9 +12,13 @@ const _sfc_main = {
       data: {},
       id: ""
     });
+    const number = common_vendor.ref(1);
     const current = common_vendor.ref(1);
     const radioChange = (e) => {
       current.value = e.detail.value;
+    };
+    const getTotalPrice = () => {
+      return (state.data.price * number.value).toFixed(2);
     };
     common_vendor.onLoad((options) => {
       state.id = options.id;
@@ -42,11 +46,13 @@ const _sfc_main = {
           showBack: true
         }),
         b: common_vendor.t(state.data.name),
-        c: 1 == common_vendor.unref(current),
-        d: 2 == common_vendor.unref(current),
-        e: common_vendor.o(radioChange),
-        f: common_vendor.t(state.data.price),
-        g: common_vendor.o(pay)
+        c: common_vendor.unref(number),
+        d: common_vendor.o(($event) => common_vendor.isRef(number) ? number.value = $event.detail.value : null),
+        e: 1 == common_vendor.unref(current),
+        f: 2 == common_vendor.unref(current),
+        g: common_vendor.o(radioChange),
+        h: common_vendor.t(getTotalPrice()),
+        i: common_vendor.o(pay)
       };
     };
   }

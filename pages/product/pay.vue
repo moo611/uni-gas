@@ -8,6 +8,10 @@
 			<text>下单时间：{{getCurrentTime()}}</text>
 		</view> -->
 		<view style="margin: 40rpx;">
+			<text>数量（升）</text>
+			<input class="my-input" v-model="number" placeholder="请输入" type="number"/>
+		</view>
+		<view style="margin: 40rpx;">
 			<text>支付方式：</text>
 		</view>
 		<view style="margin: 40rpx;">
@@ -26,7 +30,7 @@
 		</view>
 		<view class="bottom-view">
 			<view style="flex: 1;" />
-			<text>{{state.data.price}}￥</text>
+			<text>{{getTotalPrice()}}￥</text>
 			<button size="mini" @click="pay">支付</button>
 		</view>
 
@@ -45,9 +49,13 @@
 		data: {},
 		id: ''
 	})
+	const number = ref(1)
 	const current = ref(1)
 	const radioChange = (e) => {
 		current.value = e.detail.value
+	}
+	const getTotalPrice=()=>{
+		return (state.data.price*number.value).toFixed(2)
 	}
 	onLoad((options) => {
 		state.id = options.id
@@ -105,5 +113,10 @@
 		height: 100rpx;
 		display: flex;
 		align-items: center;
+	}
+	.my-input {
+		margin-top: 20rpx;
+		margin-bottom: 20rpx;
+		height: 80rpx;
 	}
 </style>
