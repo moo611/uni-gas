@@ -1,0 +1,16 @@
+
+.main.data-v-73450249 {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+}
+.my-input-div.data-v-73450249 {
+		width: 80%;
+		margin: 20rpx auto;
+}
+.my-input.data-v-73450249 {
+		margin-top: 20rpx;
+		margin-bottom: 20rpx;
+		height: 80rpx;
+}

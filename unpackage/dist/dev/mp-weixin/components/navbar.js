@@ -1,27 +1,33 @@
 "use strict";
 const common_vendor = require("../common/vendor.js");
+const common_assets = require("../common/assets.js");
 const _sfc_main = {
   __name: "navbar",
-  props: ["title"],
+  props: {
+    title: {
+      type: String,
+      default: "标题"
+    },
+    showBack: {
+      type: Boolean,
+      default: false
+    }
+  },
   setup(__props) {
-    common_vendor.useCssVars((_ctx) => ({
-      "19159cf9": txtTop,
-      "4d73d334": barHeight
-    }));
-    const props = __props;
-    const menuButton = common_vendor.index.getMenuButtonBoundingClientRect();
-    let {
-      height,
-      top,
-      bottom
-    } = menuButton;
-    const txtTop = top - 10 + "px";
-    const barHeight = bottom + 10 + "px";
+    const handleBack = () => {
+      common_vendor.index.navigateBack();
+    };
+    const navBarHeight = common_vendor.ref(44);
     return (_ctx, _cache) => {
-      return {
-        a: common_vendor.t(props.title),
-        b: common_vendor.s(_ctx.__cssVars())
-      };
+      return common_vendor.e({
+        a: __props.showBack
+      }, __props.showBack ? {
+        b: common_assets._imports_0
+      } : {}, {
+        c: common_vendor.o(handleBack),
+        d: common_vendor.t(__props.title),
+        e: navBarHeight.value + "px"
+      });
     };
   }
 };

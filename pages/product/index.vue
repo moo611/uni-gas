@@ -10,7 +10,7 @@
 					<view style="margin: 5rpx;"><text>名称:{{item.name}}</text></view>
 					<view style="margin: 5rpx;"><text>油价:{{item.price}}￥</text></view>
 				</view>
-				
+				<button size="mini" style="height: 60rpx;" @click="onpay(item.id)">购买</button>
 				<!-- <view style="background-color: #f0f0f0;height: 2rpx; position: absolute; bottom: 0;width: 100%;"/> -->
 			</view>
 		</scroll-view>
@@ -75,7 +75,13 @@
 			
 		})
 	}
-
+	
+	const onpay=(id)=>{
+		uni.navigateTo({
+			url:"/pages/product/pay?id="+id,
+			
+		})
+	}
 	
 	refresh()
 </script>

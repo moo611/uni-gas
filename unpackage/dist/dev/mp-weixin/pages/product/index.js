@@ -51,6 +51,11 @@ const _sfc_main = {
         }
       });
     };
+    const onpay = (id) => {
+      common_vendor.index.navigateTo({
+        url: "/pages/product/pay?id=" + id
+      });
+    };
     refresh();
     return (_ctx, _cache) => {
       return {
@@ -61,7 +66,8 @@ const _sfc_main = {
           return {
             a: common_vendor.t(item.name),
             b: common_vendor.t(item.price),
-            c: index
+            c: common_vendor.o(($event) => onpay(item.id), index),
+            d: index
           };
         }),
         c: common_vendor.o(loadmore)

@@ -1,7 +1,7 @@
 "use strict";
 const common_vendor = require("../common/vendor.js");
 const utils_util = require("./util.js");
-const baseURL = "http://192.168.110.219:8081/";
+const baseURL = "http://localhost:8081/";
 const request = ({
   url,
   data,

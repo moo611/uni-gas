@@ -1,14 +1,9 @@
 
 .main.data-v-861f37f2{
-		flex-direction: column;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-}
-.nav-bar.data-v-861f37f2 {
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		width: 100%;
-		height: 150rpx;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
 }
+	
+	

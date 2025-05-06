@@ -1,8 +1,8 @@
 import {
 	message
 } from "./util";
-const baseURL = "http://192.168.110.219:8081/"
-
+//const baseURL = "http://192.168.110.219:8081/"
+const baseURL = "http://localhost:8081/" 
 const request = ({
 	url,
 	data,

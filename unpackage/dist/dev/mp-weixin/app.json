@@ -5,7 +5,9 @@
     "pages/product/index",
     "pages/coupon/index",
     "pages/setting/index",
-    "pages/login/signup"
+    "pages/login/signup",
+    "pages/product/pay",
+    "pages/setting/feedback"
   ],
   "usingComponents": {
     "tabs": "/components/tabs",

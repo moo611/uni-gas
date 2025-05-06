@@ -15,14 +15,20 @@ const _sfc_main = {
         url: "/pages/login/login"
       });
     };
+    const feedback = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/setting/feedback"
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.p({
           title: "设置"
         }),
-        b: common_assets._imports_0,
+        b: common_assets._imports_0$1,
         c: common_vendor.t(common_vendor.unref(user).nickname),
-        d: common_vendor.o(logout)
+        d: common_vendor.o(feedback),
+        e: common_vendor.o(logout)
       };
     };
   }

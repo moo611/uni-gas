@@ -1,0 +1,1 @@
+<view class="main data-v-73450249"><nav-bar wx:if="{{a}}" class="data-v-73450249" u-i="73450249-0" bind:__l="__l" u-p="{{a}}"/><view class="my-input-div data-v-73450249"><text class="data-v-73450249">内容</text><input class="my-input data-v-73450249" placeholder="请输入" value="{{b}}" bindinput="{{c}}"/></view><button class="data-v-73450249" bindtap="{{d}}">发送</button></view>

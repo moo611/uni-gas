@@ -1,0 +1,17 @@
+
+.main.data-v-d2a29b03 {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+}
+.bottom-view.data-v-d2a29b03 {
+		box-sizing: border-box;
+		padding: 10rpx;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		height: 100rpx;
+		display: flex;
+		align-items: center;
+}

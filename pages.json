@@ -43,6 +43,20 @@
 			  "navigationStyle": "custom",
 			  "navigationBarTitleText": "注册页"
 			}
+		},
+		{
+			"path": "pages/product/pay",
+			"style": {
+			  "navigationStyle": "custom",
+			  "navigationBarTitleText": "支付页"
+			}
+		},
+		{
+			"path": "pages/setting/feedback",
+			"style": {
+			  "navigationStyle": "custom",
+			  "navigationBarTitleText": "反馈页"
+			}
 		}
 	],
 	"globalStyle": {

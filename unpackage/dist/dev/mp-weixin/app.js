@@ -8,6 +8,8 @@ if (!Math) {
   "./pages/coupon/index.js";
   "./pages/setting/index.js";
   "./pages/login/signup.js";
+  "./pages/product/pay.js";
+  "./pages/setting/feedback.js";
 }
 const _sfc_main = {
   onLaunch: function() {
